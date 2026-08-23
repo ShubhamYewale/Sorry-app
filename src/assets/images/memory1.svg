@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="mem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#mem)" rx="20"/>
+  <circle cx="200" cy="160" r="70" fill="#F3F0FA" opacity="0.9"/>
+  <circle cx="175" cy="145" r="10" fill="#4C1D95"/>
+  <circle cx="225" cy="145" r="10" fill="#4C1D95"/>
+  <path d="M170 185 Q200 220 230 185" stroke="#4C1D95" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M120 280 Q200 240 280 280" stroke="#F3F0FA" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <text x="200" y="360" text-anchor="middle" font-family="Pacifico, cursive" font-size="22" fill="#F3F0FA">Replace with your photo</text>
+</svg>

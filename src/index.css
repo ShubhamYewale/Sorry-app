@@ -1,0 +1,164 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    --background: 270 60% 5%;
+    --foreground: 260 40% 97%;
+    --card: 270 50% 10%;
+    --card-foreground: 260 40% 97%;
+    --popover: 270 50% 10%;
+    --popover-foreground: 260 40% 97%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 50% 15%;
+    --secondary-foreground: 260 40% 97%;
+    --muted: 270 50% 15%;
+    --muted-foreground: 260 20% 70%;
+    --accent: 330 80% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --border: 262 50% 30%;
+    --input: 270 50% 15%;
+    --ring: 262 83% 58%;
+    --chart-1: 262 83% 58%;
+    --chart-2: 330 80% 65%;
+    --chart-3: 45 90% 70%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 270 60% 5%;
+    --sidebar-foreground: 260 40% 97%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 50% 15%;
+    --sidebar-accent-foreground: 260 40% 97%;
+    --sidebar-border: 262 50% 30%;
+    --sidebar-ring: 262 83% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --paper: 45 100% 94%;
+    --pink-text: 330 80% 70%;
+  }
+
+  .dark {
+    --background: 270 60% 5%;
+    --foreground: 260 40% 97%;
+    --card: 270 50% 10%;
+    --card-foreground: 260 40% 97%;
+    --popover: 270 50% 10%;
+    --popover-foreground: 260 40% 97%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 270 50% 15%;
+    --secondary-foreground: 260 40% 97%;
+    --muted: 270 50% 15%;
+    --muted-foreground: 260 20% 70%;
+    --accent: 330 80% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --border: 262 50% 30%;
+    --input: 270 50% 15%;
+    --ring: 262 83% 58%;
+    --chart-1: 262 83% 58%;
+    --chart-2: 330 80% 65%;
+    --chart-3: 45 90% 70%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 270 60% 5%;
+    --sidebar-foreground: 260 40% 97%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 50% 15%;
+    --sidebar-accent-foreground: 260 40% 97%;
+    --sidebar-border: 262 50% 30%;
+    --sidebar-ring: 262 83% 58%;
+    --destructive-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@layer utilities {
+  .glow-violet {
+    box-shadow: 0 0 40px 8px rgba(139, 92, 246, 0.35);
+  }
+
+  .glow-pink {
+    box-shadow: 0 0 40px 8px rgba(244, 114, 182, 0.35);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 18px rgba(244, 114, 182, 0.55);
+  }
+
+  .glass {
+    background: rgba(30, 11, 56, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+  }
+
+  .paper-texture {
+    background-color: hsl(var(--paper));
+    background-image: radial-gradient(rgba(244, 114, 182, 0.08) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@layer components {
+  .section-intro {
+    background: radial-gradient(circle at 50% 30%, #2E1065 0%, #0A0418 60%, #000000 100%);
+  }
+
+  .section-cards {
+    background: linear-gradient(180deg, #0A0418 0%, #1E0B38 50%, #2E1065 100%);
+  }
+
+  .section-photos {
+    background: linear-gradient(180deg, #2E1065 0%, #4C1D95 50%, #831843 100%);
+  }
+
+  .section-letter {
+    background: linear-gradient(180deg, #831843 0%, #FBCFE8 40%, #FCE7F3 100%);
+  }
+
+  .section-final {
+    background: radial-gradient(circle at 50% 40%, #2E1065 0%, #0A0418 55%, #000000 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
